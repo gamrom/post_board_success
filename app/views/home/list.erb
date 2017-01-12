@@ -1,0 +1,7 @@
+<% @every_post.each do |p| %>
+  제목: <%= p.title %> <br>
+  내용: <%= p.content %>
+
+  <a href= "/home/update/<%= p.id %>">[수정]</a>
+  <a href= "/home/destroy/<%= p.id %>">[삭제]</a> </br>
+<% end %>
